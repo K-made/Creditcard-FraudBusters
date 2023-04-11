@@ -25,9 +25,13 @@ In coming up with the best model, the following approach will be taken:
 A randomforest classifier and Decision Tree were chosen as the two best models and compared against each other according to their performance on predicting new unseen data. in line with the business problem. The Decision Tree model was chosen as the model for deployment as it had an ROC of  98% and a recall of 90%.
 
 # Conclusions
-- The number of fraud transactions are very few compared to legitimate transactions and it has to be balanced in order for a fair comparison to prevent the model from overfitting.
-- From the data females and males are almost equally susceptible (50%) to transaction fraud. 
-- Most fraudulent activities occur from 10pm,and this is when most people are asleep.
+- From the analysis done:  
+Data seemed to suggest that females and males were almost equally susceptible (50%) to transaction fraud.  
+Most fraudulent activities occurred from 10pm,and this is when most people are asleep.  
+All Fraud Transactions occurred for an amount below 2500. Thus, the bank should note that clearly that the fraud committers try to commit frauds of smaller amounts to avoid suspicion.  
+The number of fraud transactions were very few compared to normal transactions and this had to be balanced in order  to prevent the model from overfitting.
+- After performing several models, in the balanced dataset with SMOTE technique the best two models which  were found to be Random Forest and Decision Tree.
+- The best two models were  tuned  and Decision Tree classifier  outperformed Random Forest to give a test accuracy of nearly 99.8% and a recall of 90%.This same model was chosen as the model for deployment as it had an ROC of  98% and a recall of 90%.
 
 # Recommendations  
 - For every transaction that is flagged as fraudulent, a human element can be added to verify whether the transaction was done by calling the customer. However, when precision is low, such tasks are a burden because the human element has to be increased.
