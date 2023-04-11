@@ -30,10 +30,10 @@ A randomforest classifier and Decision Tree were chosen as the two best models a
 - Most fraudulent activities occur from 10pm,and this is when most people are asleep.
 
 # Recommendations  
-- For every transaction that is flagged as fraudulent, we can add the human element to verify whether the transaction was done by calling the customer. However, when precision is low, such tasks are a burden because the human element has to be increased.
-- For banks having a larger transaction value, if the recall is low, i.e., it is unable to detect transactions that are labelled as non-fraudulent. So we have to consider the losses if the missed transaction was a high-value fraudulent one.
-- For banks with smaller average transaction value, we would want high precision because we only want to label relevant transactions as fraudulent.
-- So here, to save the banks from high-value fraudulent transactions, we have to focus on a high recall in order to detect actual fraudulent transactions.
+- For every transaction that is flagged as fraudulent, a human element can be added to verify whether the transaction was done by calling the customer. However, when precision is low, such tasks are a burden because the human element has to be increased.
+- For banks having a larger transaction value, if the recall is low, i.e., it is unable to detect transactions that are labelled as non-fraudulent. So losses will be considered if the missed transaction was a high-value fraudulent one.
+- For banks with smaller average transaction value,  high precision should be considered because  only relevant transactions should be labeled as fraudulent.
+- To save the banks from high-value fraudulent transactions, high recall should be a priority in order to detect actual fraudulent transactions.
 
 
 # Repository guide
