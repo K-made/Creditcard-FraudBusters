@@ -36,11 +36,9 @@ The number of fraud transactions were very few compared to normal transactions a
 # Recommendations 
 - The implementation of measures to prevent fraudulent transactions, such as two-factor authentication, alerts for unusual account activity, and transaction limits for certain types of purchases, is recommended.
 - Real-time monitoring is recommended to be implemented to identify and prevent fraudulent transactions as they occur, particularly during the late hours of the night.
-- The prioritization of fraud detection in high-risk states such as NY, TX, and PA is recommended.Finally, further investigation may be necessary to identify the relationship between age and the occurrence of fraudulent transactions.
-- For every transaction that is flagged as fraudulent, a human element can be added to verify whether the transaction was done by calling the customer. However, when precision is low, such tasks are a burden because the human element has to be increased.
-- For banks having a larger transaction value, if the recall is low, i.e., it is unable to detect transactions that are labelled as non-fraudulent. So losses will be considered if the missed transaction was a high-value fraudulent one.
-- For banks with smaller average transaction value,  high precision should be considered because  only relevant transactions should be labeled as fraudulent.
-- To save the banks from high-value fraudulent transactions, high recall should be a priority in order to detect actual fraudulent transactions.
+- The prioritization of fraud detection in high-risk states such asNew York(NY), Texas(TX) and Pennsylvania(PA) is recommended.
+- Finally, further investigation may be necessary to identify the relationship between age and the occurrence of fraudulent transactions.
+- For every transaction that is flagged as fraudulent, a human element can be added to verify whether the transaction was done by calling the customer.
 
 
 # Repository guide
