@@ -11,7 +11,7 @@ Fraud associated with transactions has increased significantly and fraud detecti
 Due to the increase in fraudulent activities it has become essential for financial institutions and businesses to develop advanced fraud detection techniques to counter the threat of fraudulent credit card transactions and identity theft and keep losses to a minimum  
 
 # Data understanding  
-The dataset used for this project was acquired from [Kaggle](https://www.kaggle.com/datasets/kartik2112/fraud-detection?select=fraudTest.csv) . This dataset contains financial transactions that have been simulated using a real-world financial transactions dataset and it has 23 columns and rows. The target variable(is fraud) which is a binary indicator shows that whether the transaction is fraudulent 1 or not 0.We performed an exploratory data analysis to the training data to understand which features were correlated to fraudulent activities and then attempted to create models with those features and test out their predicitve effectiveness.The dataset contained the folowing features.  
+The dataset used for this project was acquired from [Kaggle](https://user-images.githubusercontent.com/116062465/231133305-0696d3b3-ce64-4c0e-b1df-afb357abc931.png) .This dataset contained financial transactions that had been simulated using a real-world financial transactions dataset and it had 23 columns and rows and the target variable(is fraud) was a binary indicator showing whether the transaction was fraudulent 1 or normal 0.
 
 # Data Pre Processing  
 The columns were renamed to a proper and understandable way,checked for features that have high correlation with the target(Is Fraud) variable and the irrelevant columns dropped.Categorical columns were Label encoded and the numerical columns were scaled using MinMaxScaler() so that all features got to the same scale improving the model performance.Since we had less cases of fraud in our dataset we used **SMOTE** to balance the dataset sto increase the representation of the minority class in the training data.  
@@ -33,7 +33,10 @@ The number of fraud transactions were very few compared to normal transactions a
 - After performing several models, in the balanced dataset with SMOTE technique the best two models which  were found to be Random Forest and Decision Tree.
 - The best two models were  tuned  and Decision Tree classifier  outperformed Random Forest to give a test accuracy of nearly 99.8% and a recall of 90%.This same model was chosen as the model for deployment as it had an ROC of  98% and a recall of 90%.
 
-# Recommendations  
+# Recommendations 
+- The implementation of measures to prevent fraudulent transactions, such as two-factor authentication, alerts for unusual account activity, and transaction limits for certain types of purchases, is recommended.
+- Real-time monitoring is recommended to be implemented to identify and prevent fraudulent transactions as they occur, particularly during the late hours of the night.
+- The prioritization of fraud detection in high-risk states such as NY, TX, and PA is recommended.Finally, further investigation may be necessary to identify the relationship between age and the occurrence of fraudulent transactions.
 - For every transaction that is flagged as fraudulent, a human element can be added to verify whether the transaction was done by calling the customer. However, when precision is low, such tasks are a burden because the human element has to be increased.
 - For banks having a larger transaction value, if the recall is low, i.e., it is unable to detect transactions that are labelled as non-fraudulent. So losses will be considered if the missed transaction was a high-value fraudulent one.
 - For banks with smaller average transaction value,  high precision should be considered because  only relevant transactions should be labeled as fraudulent.
