@@ -56,3 +56,4 @@ The number of fraud transactions were very few compared to normal transactions a
 - The data report can be found [here]
 - The notebook can be found [here](https://github.com/K-made/Creditcard-FraudBusters/blob/main/.ipynb_checkpoints/credit-cards-checkpoint.ipynb)
 - The Presentation Slides can be found [here](https://www.canva.com/design/DAFfIULTcgs/CQ9ealhZ-N0MgHn8T3lqhQ/view?utm_content=DAFfIULTcgs&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink#2)
+- Deployment link [here](https://flavianmiano-credit-card-fraud-detection-home-b1e6gv.streamlit.app/User)
