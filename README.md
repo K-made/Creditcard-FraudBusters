@@ -95,7 +95,7 @@ The number of fraud transactions were very few compared to normal transactions a
 - The implementation of measures to prevent fraudulent transactions, such as two-factor authentication, alerts for unusual account activity, and transaction limits for certain types of purchases, is recommended.
 - Real-time monitoring is recommended to be implemented to identify and prevent fraudulent transactions as they occur, particularly during the late hours of the night.
 - The prioritization of fraud detection in high-risk states such as New York(NY), Texas(TX) and Pennsylvania(PA) is recommended.
-- Recommend Public education on financial literacy and how to keep private information safe is pretty important to people aged between 30 - 60 as they more susceptible to fraud. 
+- Recommend Public education on financial literacy and how to keep private information safe  to people aged between 30 - 60 as they more susceptible to fraud. 
 - For every transaction that is flagged as fraudulent, a human element can be added to verify whether the transaction was done by calling the customer.
 
 
