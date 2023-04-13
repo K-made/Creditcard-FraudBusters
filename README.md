@@ -50,7 +50,7 @@ Trans_date_trans_time - Transaction DateTime
 - The columns were renamed to a proper and understandable way
 - checking for features with high correlation with the target(Is Fraud) variable. 
 - Dropping the irrelevant columns('Date', 'Longitude', 'Merchant Latitude', 'Merchant Longitude').
-- Dealing with Categorical columns  and the numerical columns by label Encoding  and feature scaling  using MinMaxScaler() respectively.Feature scaling was to ensured so all features are on the same scale improving the model performance.
+- Dealing with Categorical columns  and the numerical columns by label Encoding  and feature scaling  using MinMaxScaler() respectively.Feature scaling was to ensure all features are on the same scale improving the model performance.
 - Handling Class Imbalance using SMOTE Since there were less cases of fraud in the dataset  so as to balance the dataset  increasing the representation of the minority class in the training data.  
 
 # Modelling  
