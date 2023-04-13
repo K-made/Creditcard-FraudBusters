@@ -24,6 +24,12 @@ In coming up with the best model, the following approach will be taken:
 # Evaluation  
 A randomforest classifier and Decision Tree were chosen as the two best models and compared against each other according to their performance on predicting new unseen data. in line with the business problem. The Decision Tree model was chosen as the model for deployment as it had an ROC of  98% and a recall of 90%.
 
+# Minimum Viables
+## Short comings:
+- Imbalanced dataset, with a small number of fraud cases relative to non fraud cases
+- Limited model tuning due to computational power constraints
+
+
 # Conclusions
 - From the analysis done:  
 Data seemed to suggest that females and males were almost equally susceptible (50%) to transaction fraud.  
