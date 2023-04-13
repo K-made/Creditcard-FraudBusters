@@ -18,7 +18,7 @@ The columns were renamed to a proper and understandable way,checked for features
 
 # Modelling  
 In coming up with the best model, the following approach will be taken:
-- We ran different classification models i.e Logistic Regression,Random Forest, Decision Tree  and K Nearest Neighbors on the balanced training dataset.
+- Different classification models were run i.e Logistic Regression,Random Forest, Decision Tree  and K Nearest Neighbors on the balanced training dataset.
 - Of the four classifiers,Random Forest and Decision Tree were the top best and were selected for  Hyperparameters tuning  ( taking into account prediction accuracy and recall).
 
 # Evaluation  
