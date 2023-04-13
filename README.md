@@ -12,10 +12,11 @@ Due to the increase in fraudulent activities it has become essential for financi
 
 ## Specific Objectives
 - To identify and analyze patterns and correlations in the dataset to better understand the characteristics of fraudulent transactions.
-To highlight the importance of using machine learning techniques for fraud detection in credit card transactions.
-- To emphasize the potential benefits of implementing the selected model for credit card companies, including saving time and money by preventing fraudulent transactions.
-- To check time of the day when most frauds are conducted and ages that are prone to credit card Frauds
-- Maximizing the accuracy of the fraud detection model based on the average transaction value of the bank, with a focus on high precision for banks with smaller transaction values and high recall for banks with larger transaction values.
+- To check time of the day when most frauds are conducted and ages that are prone to credit card Frauds.
+- To contribute to the development of more accurate and effective fraud detection models for financial transactions.
+- To provide a useful tool for individuals and organizations to detect and prevent fraudulent financial transactions, thereby minimizing financial losses and improving financial security.
+- To compare different ML models predictions to achieve highest accuracy.
+- Advice the Company on best the strategy.
 
 # Data understanding  
 The dataset used for this project was acquired from [Kaggle](https://user-images.githubusercontent.com/116062465/231133305-0696d3b3-ce64-4c0e-b1df-afb357abc931.png) .This dataset contained financial transactions that had been simulated using a real-world financial transactions dataset and it had 23 columns and rows and the target variable(is fraud) was a binary indicator showing whether the transaction was fraudulent 1 or normal 0.An exploratory data analysis was performed on the training data to identify features that were correlated with fraudulent activities. Models were then developed using those features, and their predictive effectiveness was evaluated. The features present in the dataset were analyzed.These are some of the features present in the dataset.
