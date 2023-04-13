@@ -10,6 +10,13 @@ Fraud associated with transactions has increased significantly and fraud detecti
 ## Main objective  
 Due to the increase in fraudulent activities it has become essential for financial institutions and businesses to develop advanced fraud detection techniques to counter the threat of fraudulent credit card transactions and identity theft and keep losses to a minimum  
 
+## Specific Objectives
+- To identify and analyze patterns and correlations in the dataset to better understand the characteristics of fraudulent transactions.
+To highlight the importance of using machine learning techniques for fraud detection in credit card transactions.
+- To emphasize the potential benefits of implementing the selected model for credit card companies, including saving time and money by preventing fraudulent transactions.
+- To check time of the day when most frauds are conducted and ages that are prone to credit card Frauds
+- Maximizing the accuracy of the fraud detection model based on the average transaction value of the bank, with a focus on high precision for banks with smaller transaction values and high recall for banks with larger transaction values.
+
 # Data understanding  
 The dataset used for this project was acquired from [Kaggle](https://user-images.githubusercontent.com/116062465/231133305-0696d3b3-ce64-4c0e-b1df-afb357abc931.png) .This dataset contained financial transactions that had been simulated using a real-world financial transactions dataset and it had 23 columns and rows and the target variable(is fraud) was a binary indicator showing whether the transaction was fraudulent 1 or normal 0.
 
@@ -32,7 +39,13 @@ A randomforest classifier and Decision Tree were chosen as the two best models a
 ## Done to improve:
 - More relevant features engineered to better capture the nuances of the data.
 - Different models experimented including logistic regression,Random Forest and KNN to find the best model for the problem.
+- Use anomalous deection to check for outliers in different columns and to determine other factors that contribute to faudulent activities.  
 
+## Strengths
+- Best performing model,Decision Tree Tuned achieved a high ROC score of 98% and a recall of 99% for non fraud cases and 89% for fraud cases including indicating good performance on both cases.
+- proof of concept demonstrated for using machine learning to address the problem of credit card fraud detection.
+- We had a test dataset to prove if the model's fraud predictions were similar to that of fraudulent activities in the test dataset.
+- Overall, the MVP for the credit card fraud detection model is a promising starting point for future improvements.Further Data collection and feature engineering as well as experimentation with different models and hyperparameters can help improve the accuracy and robustness of the model. 
 
 # Conclusions
 - From the analysis done:  
