@@ -84,13 +84,14 @@ A randomforest classifier and Decision Tree were chosen as the two best models a
 - Overall, the MVP for the credit card fraud detection model is a promising starting point for future improvements.Further Data collection and feature engineering as well as experimentation with different models and hyperparameters can help improve the accuracy and robustness of the model. 
 
 # Conclusions
-- From the analysis done:  
-Data seemed to suggest that females and males were almost equally susceptible (50%) to transaction fraud.  
-Most fraudulent activities occurred from 10pm,and this is when most people are asleep.  
-All Fraud Transactions occurred for an amount below 2500. Thus, the bank should note that clearly that the fraud committers try to commit frauds of smaller amounts to avoid suspicion.  
-The number of fraud transactions were very few compared to normal transactions and this had to be balanced in order  to prevent the model from overfitting.
-- After performing several models, in the balanced dataset with SMOTE technique the best two models which  were found to be Random Forest and Decision Tree.
-- The best two models were  tuned  and Decision Tree classifier  outperformed Random Forest to give a test accuracy of nearly 99.8% and a recall of 90%.This same model was chosen as the model for deployment as it had an ROC of  98% and a recall of 90%.
+
+- After the models were evaluated, the Decision Tree model was selected as the final model based on the highest performance on evaluation metrics. An ROC score of 99%, recall of 95%, and F1-score of 99% were achieved by the final model, indicating its ability to classify instances of fraud with high accuracy and low false positives and false negatives.
+- The dataset was highly imbalanced, with a small percentage of fraudulent transactions. Fraudulent transactions tend to peak around `$300` and then at the `$800-$1000` range, and the amount of fraudulent transactions tends to be higher than that of legitimate transactions. 
+- Correlation analysis indicates that age and location are also factors that have some correlation with fraudulent transactions.
+- Fradulent transaction accur in smaller amount to avoid suspicions. 
+- Data seemed to suggest that females and males were almost equally susceptible `(50%) to transaction fraud.
+- Overall, the importance of using machine learning techniques for fraud detection in credit card transactions is highlighted by the findings from the analysis and the performance of the selected model. I
+- mplementing this model can better identify and prevent fraudulent transactions, ultimately saving time and money for both the company and their customers.
 
 # Recommendations 
 - The implementation of measures to prevent fraudulent transactions, such as two-factor authentication, alerts for unusual account activity, and transaction limits for certain types of purchases, is recommended.
