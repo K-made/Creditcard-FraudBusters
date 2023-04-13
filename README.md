@@ -20,31 +20,31 @@ To highlight the importance of using machine learning techniques for fraud detec
 # Data understanding  
 The dataset used for this project was acquired from [Kaggle](https://user-images.githubusercontent.com/116062465/231133305-0696d3b3-ce64-4c0e-b1df-afb357abc931.png) .This dataset contained financial transactions that had been simulated using a real-world financial transactions dataset and it had 23 columns and rows and the target variable(is fraud) was a binary indicator showing whether the transaction was fraudulent 1 or normal 0.An exploratory data analysis was performed on the training data to identify features that were correlated with fraudulent activities. Models were then developed using those features, and their predictive effectiveness was evaluated. The features present in the dataset were analyzed.These are some of the features present in the dataset.
 
-Index - Unique Identifier for each row
-Trans_date_trans_time - Transaction DateTime
-Cc_num - Credit Card Number of Customer
-Merchant - Merchant Name
-Category - Category of Merchant
-Amt - Amount of Transaction
-First - First Name of Credit Card Holder
-Last - Last Name of Credit Card Holder
-Gender - Gender of Credit Card Holder
-Street - Street Address of Credit Card Holder
-City - City of Credit Card Holder
-State - State of Credit Card Holder
-Zip - Zip of Credit Card Holder
-Lat - Latitude Location of Credit Card Holder
-Long - Longitude Location of Credit Card Holder
-City_pop - Credit Card Holder's City Population
-Job -Job of Credit Card Holder
-Dob - Date of Birth of Credit Card Holder
-Rans_num - Transaction Number
-Unix_time - UNIX Time of transaction
-Merch_lat - Latitude Location of Merchant
-Merch_long - Longitude Location of Merchant
-Is_fraud - Fraud Flag <--- Target Class
-Index Unique - Identifier for each row
-Trans_date_trans_time - Transaction DateTime
+- Index - Unique Identifier for each row
+- Trans_date_trans_time - Transaction DateTime
+- Cc_num - Credit Card Number of Customer
+- Merchant - Merchant Name
+- Category - Category of Merchant
+- Amt - Amount of Transaction
+- First - First Name of Credit Card Holder
+- Last - Last Name of Credit Card Holder
+- Gender - Gender of Credit Card Holder
+- Street - Street Address of Credit Card Holder
+- City - City of Credit Card Holder
+- State - State of Credit Card Holder
+- Zip - Zip of Credit Card Holder
+- Lat - Latitude Location of Credit Card Holder
+- Long - Longitude Location of Credit Card Holder
+- City_pop - Credit Card Holder's City Population
+- Job -Job of Credit Card Holder
+- Dob - Date of Birth of Credit Card Holder
+- Rans_num - Transaction Number
+- Unix_time - UNIX Time of transaction
+- Merch_lat - Latitude Location of Merchant
+- Merch_long - Longitude Location of Merchant
+- Is_fraud - Fraud Flag <--- Target Class
+- Index Unique - Identifier for each row
+- Trans_date_trans_time - Transaction DateTime
 
 # Data Pre Processing  
 - The columns were renamed to a proper and understandable way
