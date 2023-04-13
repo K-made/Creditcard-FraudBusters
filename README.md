@@ -29,7 +29,7 @@ A randomforest classifier and Decision Tree were chosen as the two best models a
 - Imbalanced dataset, with a small number of fraud cases relative to non fraud cases
 - Limited model tuning due to computational power constraints
 
-##Done to improve:
+## Done to improve:
 - More relevant features engineered to better capture the nuances of the data.
 - Different models experimented including logistic regression,Random Forest and KNN to find the best model for the problem.
 
