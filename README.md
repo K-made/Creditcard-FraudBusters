@@ -18,18 +18,53 @@ To highlight the importance of using machine learning techniques for fraud detec
 - Maximizing the accuracy of the fraud detection model based on the average transaction value of the bank, with a focus on high precision for banks with smaller transaction values and high recall for banks with larger transaction values.
 
 # Data understanding  
-The dataset used for this project was acquired from [Kaggle](https://user-images.githubusercontent.com/116062465/231133305-0696d3b3-ce64-4c0e-b1df-afb357abc931.png) .This dataset contained financial transactions that had been simulated using a real-world financial transactions dataset and it had 23 columns and rows and the target variable(is fraud) was a binary indicator showing whether the transaction was fraudulent 1 or normal 0.
+The dataset used for this project was acquired from [Kaggle](https://user-images.githubusercontent.com/116062465/231133305-0696d3b3-ce64-4c0e-b1df-afb357abc931.png) .This dataset contained financial transactions that had been simulated using a real-world financial transactions dataset and it had 23 columns and rows and the target variable(is fraud) was a binary indicator showing whether the transaction was fraudulent 1 or normal 0.An exploratory data analysis was performed on the training data to identify features that were correlated with fraudulent activities. Models were then developed using those features, and their predictive effectiveness was evaluated. The features present in the dataset were analyzed.These are some of the features present in the dataset.
+
+Index - Unique Identifier for each row
+Trans_date_trans_time - Transaction DateTime
+Cc_num - Credit Card Number of Customer
+Merchant - Merchant Name
+Category - Category of Merchant
+Amt - Amount of Transaction
+First - First Name of Credit Card Holder
+Last - Last Name of Credit Card Holder
+Gender - Gender of Credit Card Holder
+Street - Street Address of Credit Card Holder
+City - City of Credit Card Holder
+State - State of Credit Card Holder
+Zip - Zip of Credit Card Holder
+Lat - Latitude Location of Credit Card Holder
+Long - Longitude Location of Credit Card Holder
+City_pop - Credit Card Holder's City Population
+Job -Job of Credit Card Holder
+Dob - Date of Birth of Credit Card Holder
+Rans_num - Transaction Number
+Unix_time - UNIX Time of transaction
+Merch_lat - Latitude Location of Merchant
+Merch_long - Longitude Location of Merchant
+Is_fraud - Fraud Flag <--- Target Class
+Index Unique - Identifier for each row
+Trans_date_trans_time - Transaction DateTime
 
 # Data Pre Processing  
-The columns were renamed to a proper and understandable way,checked for features that have high correlation with the target(Is Fraud) variable and the irrelevant columns dropped.Categorical columns were Label encoded and the numerical columns were scaled using MinMaxScaler() so that all features got to the same scale improving the model performance.Since we had less cases of fraud in our dataset we used **SMOTE** to balance the dataset sto increase the representation of the minority class in the training data.  
+- The columns were renamed to a proper and understandable way
+- checking for features with high correlation with the target(Is Fraud) variable. 
+- Dropping the irrelevant columns('Date', 'Longitude', 'Merchant Latitude', 'Merchant Longitude').
+- Dealing with Categorical columns  and the numerical columns by label Encoding  and feature scaling  using MinMaxScaler() respectively.Feature scaling was to ensured so all features are on the same scale improving the model performance.
+- Handling Class Imbalance using SMOTE Since there were less cases of fraud in the dataset  so as to balance the dataset  increasing the representation of the minority class in the training data.  
 
 # Modelling  
-In coming up with the best model, the following approach will be taken:
-- Different classification models were run i.e Logistic Regression,Random Forest, Decision Tree  and K Nearest Neighbors on the balanced training dataset.
-- Of the four classifiers,Random Forest and Decision Tree were the top best and were selected for  Hyperparameters tuning  ( taking into account prediction accuracy and recall).
+In coming up with the best model, the following approach was  taken:
+- Fitting potential classification models such as Random Forest classifier, Logistic Model, decision tree and K Nearest Neighbors on the balanced training dataset.
+- Hyperparameters tuning of the two best models i.e Random Forest and Decision Tree(taking into account prediction accuracy and recall).
+- Comparing vanilla versions of the two best models with the tuned versions of the models and selecting the best model for Deployment.
+
+In summary, the evaluation of the four models for predicting fraud in a dataset was conducted, namely Logistic Regression, Decision Trees, Random Forest, and KNN, with variation in ROC scores and recall values across the models. The best results were achieved by the Random Forest model, followed closely by the Decision Trees model. As a result, it is recommended that the Random Forest and Decision Trees models undergo further tuning, as the highest ROC scores and recall values were achieved by them. Further tuning of these models has the potential to improve their performance and make them even more suitable for predicting fraud in similar datasets.
+
+To evaluate fraud detection models, the concepts of sensitivty/recall and precision are very important. Recall is True Positives/(True Positives + False Negatives), which measures how many fraud cases fly under the radar while precision (True Positives/(True Positives + False Positives)) evaluates how good the model is at generating as fewer false alarms as possible. For fraud detection, prioritize high recall to leave out as few fraud cases as possible while also having a relatively high precision because too many false alarms can also be a problem.
 
 # Evaluation  
-A randomforest classifier and Decision Tree were chosen as the two best models and compared against each other according to their performance on predicting new unseen data. in line with the business problem. The Decision Tree model was chosen as the model for deployment as it had an ROC of  98% and a recall of 90%.
+A randomforest classifier and Decision Tree were chosen as the two best models and compared against each other according to their performance on predicting new unseen data. in line with the business problem. The Decision Tree model was chosen as the model for deployment as it had an ROC of 98% and a recall of 90%.
 
 # Minimum Viable product
 ## Short comings:
@@ -59,7 +94,8 @@ The number of fraud transactions were very few compared to normal transactions a
 # Recommendations 
 - The implementation of measures to prevent fraudulent transactions, such as two-factor authentication, alerts for unusual account activity, and transaction limits for certain types of purchases, is recommended.
 - Real-time monitoring is recommended to be implemented to identify and prevent fraudulent transactions as they occur, particularly during the late hours of the night.
-- The prioritization of fraud detection in high-risk states such asNew York(NY), Texas(TX) and Pennsylvania(PA) is recommended.
+- The prioritization of fraud detection in high-risk states such as New York(NY), Texas(TX) and Pennsylvania(PA) is recommended.
+- Recommend Public education on financial literacy and how to keep private information safe is pretty important to people aged between 30 - 60 as they more susceptible to fraud. 
 - For every transaction that is flagged as fraudulent, a human element can be added to verify whether the transaction was done by calling the customer.
 
 
