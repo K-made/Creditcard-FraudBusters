@@ -31,7 +31,7 @@ In coming up with the best model, the following approach will be taken:
 # Evaluation  
 A randomforest classifier and Decision Tree were chosen as the two best models and compared against each other according to their performance on predicting new unseen data. in line with the business problem. The Decision Tree model was chosen as the model for deployment as it had an ROC of  98% and a recall of 90%.
 
-# Minimum Viables
+# Minimum Viable product
 ## Short comings:
 - Imbalanced dataset, with a small number of fraud cases relative to non fraud cases
 - Limited model tuning due to computational power constraints
@@ -60,7 +60,6 @@ The number of fraud transactions were very few compared to normal transactions a
 - The implementation of measures to prevent fraudulent transactions, such as two-factor authentication, alerts for unusual account activity, and transaction limits for certain types of purchases, is recommended.
 - Real-time monitoring is recommended to be implemented to identify and prevent fraudulent transactions as they occur, particularly during the late hours of the night.
 - The prioritization of fraud detection in high-risk states such asNew York(NY), Texas(TX) and Pennsylvania(PA) is recommended.
-- Finally, further investigation may be necessary to identify the relationship between age and the occurrence of fraudulent transactions.
 - For every transaction that is flagged as fraudulent, a human element can be added to verify whether the transaction was done by calling the customer.
 
 
