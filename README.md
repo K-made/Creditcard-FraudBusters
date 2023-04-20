@@ -106,4 +106,4 @@ A randomforest classifier and Decision Tree were chosen as the two best models a
 - The data report can be found [here](https://docs.google.com/document/d/13bjQ34r_e0_QOK4VrOd3s_MSTSW1FWB-59lFCNM_5DI/edit?usp=sharing)
 - The notebook can be found [here](https://github.com/K-made/Creditcard-FraudBusters/blob/main/.ipynb_checkpoints/credit-cards-checkpoint.ipynb)
 - The Presentation Slides can be found [here](https://www.canva.com/design/DAFfIULTcgs/CQ9ealhZ-N0MgHn8T3lqhQ/view?utm_content=DAFfIULTcgs&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink#2)
-- Deployment link [here](https://flavianmiano-credit-card-fraud-detection-home-b1e6gv.streamlit.app/User)
+- Deployment link [here](https://flavianmiano-credit-card-fraud-detection-home-b1e6gv.streamlit.app/User).
